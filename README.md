@@ -50,29 +50,34 @@ Melihat tipe data apa saja yang digunakan dalam data pada setiap kolom
 ```python
 df.info()
 ```
-![Alt text](df_info.png)
+![Alt text](df_info.png)<br>
+
 Melihat apakah dalam data ada nilai null atau tidak
 ```python
 sns.heatmap(df.isnull())
 ```
-![Alt text](heatmap.png)
+![Alt text](heatmap.png)<br>
+
 Mengetahui deskripsi data
 ```python
 df.describe()
 ```
-![Alt text](df_describe.png)
+![Alt text](df_describe.png)<br>
+
 ```python
 plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(),annot=True)
 ```
-![Alt text](heatmap_(2).png)
+![Alt text](heatmap_(2).png)<br>
+
 ```python
 plt.figure(figsize=(8, 6))
 sns.histplot(data=df['price'], bins=20, kde=True)
 plt.title('Distribution of Price')
 plt.show()
 ```
-![Alt text](distribusi_harga.png)
+![Alt text](distribusi_harga.png)<br>
+
 ```python
 n = 20  # Number of top car models to plot
 top_car_models = df['model'].value_counts().head(n)
@@ -85,28 +90,32 @@ plt.ylabel('Car Model')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text](top_20_model.png)
+![Alt text](top_20_model.png)<br>
+
 ```python
 plt.scatter(df['tax'], df['price'])
 plt.xlabel("tax")
 plt.ylabel("Price")
 plt.show()
 ```
-![Alt text](tax.png)
+![Alt text](tax.png)<br>
+
 ```python
 plt.scatter(df['year'], df['price'])
 plt.xlabel("Year")
 plt.ylabel("Price")
 plt.show()
 ```
-![Alt text](tahun.png)
+![Alt text](tahun.png)<br>
+
 ```python
 plt.scatter(df.engineSize, df.price)
 plt.xlabel("engineSize")
 plt.ylabel("Price")
 plt.show()
 ```
-![Alt text](ukuran_mesin.png)
+![Alt text](ukuran_mesin.png)<br>
+
 ### Variabel-variabel pada Ford Car Price Prediction Dataset adalah sebagai berikut:
 - model - > Ford Car Brands
 - year - >Production Year
