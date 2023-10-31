@@ -45,6 +45,7 @@ Melihat isi data
 df.head()
 ```
 ![Alt text](df_head.png)<br>
+
 Melihat tipe data apa saja yang digunakan dalam data pada setiap kolom
 ```python
 df.info()
